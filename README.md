@@ -4,6 +4,6 @@ installprerequisites.sh(run as root)  (when prompted answer 1)
 cloneandbuild.sh
 install-as-service.sh (run as root)
 configure your /etc/matrix-conduit/conduit.toml with the hostname of you server like matrix.yourdomain.com
-When done editing /etc/matrix-conduit/conduit.toml, run the following
+When done editing /etc/matrix-conduit/conduit.toml, run the following to make sure everything works
 sudo systemctl daemon-reload
 systemctl start conduit
