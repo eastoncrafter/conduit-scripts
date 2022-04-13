@@ -3,7 +3,9 @@ if (( $EUID != 0 )); then
     echo "Please run as root"
     exit
 fi
+#create the conduit user
 adduser --system conduit --no-create-home
+#create the conduit service
 echo "[Unit]
 
 Description=Conduit Matrix Server
@@ -27,6 +29,7 @@ ExecStart=/usr/local/bin/matrix-conduit
 WantedBy=multi-user.target
 
 " | tee /etc/systemd/system/conduit.service
+#reload everything multiple times because why not
 systemctl daemon-reload
 systemctl enable conduit
 systemctl start conduit
