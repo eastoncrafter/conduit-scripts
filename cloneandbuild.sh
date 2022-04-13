@@ -1,4 +1,7 @@
 #!/bin/bash
+cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#Proceed with install using default options.  Script will add  $HOME/.cargo/env to your .profile, so ’source’ it after install finishes….
 source ~/.profile
 source $HOME/.cargo/env
 source ~/.bashrc
