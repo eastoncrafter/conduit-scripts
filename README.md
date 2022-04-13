@@ -5,7 +5,9 @@ createswap.sh (run as root)
 
 installprerequisites.sh(run as root)  (when prompted answer 1)
 
-cloneandbuild.sh
+install-rust.sh
+
+build.sh
 
 install-as-service.sh (run as root)
 
