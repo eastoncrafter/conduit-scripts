@@ -1,5 +1,6 @@
 #!/bin/bash
 source ~/.profile
+source $HOME/.cargo/env
 cd ~
 mkdir build
 cd build/
