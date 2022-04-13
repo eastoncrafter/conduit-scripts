@@ -7,3 +7,4 @@ configure your /etc/matrix-conduit/conduit.toml with the hostname of you server 
 When done editing /etc/matrix-conduit/conduit.toml, run the following
 sudo systemctl daemon-reload
 systemctl start conduit
+Test
